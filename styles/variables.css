@@ -1,0 +1,16 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font: 'Inter-Variable';
+  --accent-font: 'PressStart2P-Regular';
+  --font-weight: 400;
+  --title-font-weight: 700;
+  --background-color: rgba(255, 255, 255, 1);
+  --accent-color: #000;
+  --button-color: rgba(255, 255, 255, 1);
+  --background-gradient: #d3d3d3;
+  --background-from-accent: #e7e7e7;
+  --background-to-accent: #1a1a1a;
+  --shadow-color: rgba(255, 255, 255, 1);
+  --heart-color: #FF0000;
+  --floppy-icon-color:  rgba(255, 255, 255, 1);
+}
