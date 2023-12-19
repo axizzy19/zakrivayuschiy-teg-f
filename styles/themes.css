@@ -21,6 +21,8 @@
   --background-gradient: #000;
   --background-from-accent: #007f0c;
   --background-to-accent: #004306;
+  --font-weight: 465;
+  --title-font-weight: 785;
 }
 
 :root.theme-light {
@@ -51,6 +53,8 @@
     --background-gradient: #000;
     --background-from-accent: #007f0c;
     --background-to-accent: #004306;
+    --font-weight: 465;
+    --title-font-weight: 785;
   }
 }
 
