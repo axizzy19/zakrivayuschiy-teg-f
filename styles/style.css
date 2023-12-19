@@ -122,7 +122,6 @@
 }
 
 .theme-menu__button:focus-visible::after {
-  content: "";
   transform: scaleX(1);
 }
 
@@ -175,7 +174,7 @@
   font-size: 14px;
   color: var(--accent-color);
   position: absolute;
-  inset-inline-end: clamp(0.6875rem, -7.8072rem + 36.2441vw, 24.8125rem);
+  inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
   inset-block-start: 25px;
   justify-self: end;
   text-shadow: 0 0 1px var(--shadow-color);
@@ -274,21 +273,29 @@
 
 .like-icon.is-liked .main-body {
   fill: var(--heart-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0.05s;
 }
 
 .like-icon .contour {
   fill: var(--accent-color);
-  transition: fill 0.3s linear 0.06s;
+  transition: fill 0.1s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-color);
-  /* transition: fill 0.3s linear 0.06s; */
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .heart {
   animation: scale-animation 0.3s ease-in 0.1s alternate;
   transform-origin: center;
+  animation-iteration-count: 1;
 }
 
 .like-icon.is-liked .sparks {
@@ -473,4 +480,14 @@ dialog::backdrop {
     padding-block: 12px;
     padding-inline: 18px;
   }
+}
+
+.floppy__icon__dialog {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.floppy__icon__save {
+  inline-size: 29px;
+  block-size: 28px;
 }
