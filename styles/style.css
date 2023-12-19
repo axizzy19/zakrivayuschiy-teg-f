@@ -54,7 +54,6 @@
 }
 
 .box {
-  inline-size: 100%;
   margin-inline: auto;
   inline-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
 }
